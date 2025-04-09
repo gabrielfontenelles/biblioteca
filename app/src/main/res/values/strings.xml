@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">biblioteca</string>
+        <string name="menu_books">Livros</string>
+        <string name="menu_stats">Estatísticas</string>
+        <string name="menu_profile">Perfil</string>
+
+</resources>

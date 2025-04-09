@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTituloAddLivro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Livro"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Título do Livro -->
+    <EditText
+        android:id="@+id/etTituloLivro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Título"
+        android:backgroundTint="#3498DB"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#B0BEC5"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloAddLivro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Autor -->
+    <EditText
+        android:id="@+id/etAutorLivro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Autor"
+        android:backgroundTint="#3498DB"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#B0BEC5"
+        app:layout_constraintTop_toBottomOf="@id/etTituloLivro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Gênero -->
+    <EditText
+        android:id="@+id/etGeneroLivro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Gênero"
+        android:backgroundTint="#3498DB"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#B0BEC5"
+        app:layout_constraintTop_toBottomOf="@id/etAutorLivro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Total de Páginas -->
+    <EditText
+        android:id="@+id/etPaginasLivro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Total de Páginas"
+        android:inputType="number"
+        android:backgroundTint="#3498DB"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#B0BEC5"
+        app:layout_constraintTop_toBottomOf="@id/etGeneroLivro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botão de Salvar -->
+    <Button
+        android:id="@+id/btnSalvarLivro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:backgroundTint="#2ECC71"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/etPaginasLivro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
